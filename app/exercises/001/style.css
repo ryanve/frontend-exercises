@@ -1,0 +1,130 @@
+/* General */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  font: 100% 'Lato', sans-serif;
+  line-height: 1.9;
+  color: #753555; 
+  background: #f5f5f5 url(blossoms.jpg) no-repeat bottom right; 
+  margin: 0; 
+  padding: 0;
+}
+
+p { 
+  margin-top: 0; 
+  text-align: justify;
+}
+
+h3 { 
+  font: italic normal 1.4em georgia, sans-serif;
+  letter-spacing: 1px; 
+  margin-bottom: 0; 
+  color: #7D775C;
+}
+
+a:link { 
+  font-weight: bold; 
+  text-decoration: none; 
+  color: #B7A5DF;
+}
+
+a:visited { 
+  font-weight: bold; 
+  text-decoration: none; 
+  color: #D4CDDC;
+}
+
+a:hover, a:focus, a:active { 
+  text-decoration: underline; 
+  color: #9685BA;
+}
+
+abbr {
+  border-bottom: none;
+}
+
+/* Structure */
+.container {
+  max-width: 900px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.col {
+  width: 100%;
+  float: left;
+  display: block;
+}
+
+.primary {
+  width: 75%;
+}
+
+.secondary {
+  width: 25%;
+}
+
+.site-footer {
+  color: #fff; 
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #7D775C;
+}
+
+.nav-area {
+  margin-top: 28px;
+}
+
+.main-nav {
+  text-align: right;
+  font-size: 1.5rem;
+  vertical-align: bottom;
+}
+
+  .main-nav__item {
+    background: #FFF;
+    padding: .6rem .6rem;
+    margin-left: 1rem;
+  }
+
+/* Typography */
+.fancy {
+  font-family: 'Abril Fatface', cursive;
+  text-transform: lowercase;
+  display: block;
+  letter-spacing: .23rem;
+}
+
+.half-fade {
+  opacity: .5;
+}
+
+.typo-logo{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  line-height: 3rem;
+  margin-top: 0;
+}
+
+.huge {
+  font-size: 5rem;
+}
