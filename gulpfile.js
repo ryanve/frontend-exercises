@@ -126,7 +126,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
         server.changed(file.path);
     });
 
-    gulp.watch(['app/styles/**/*.scss', 'app/**/*.scss', 'app/**/*.css'], ['styles']);
+    gulp.watch(['app/styles/**/*.scss', 'app/**/*.scss', 'app/exercises/**/*.css'], ['styles']);
     gulp.watch('app/scripts/**/*.js', ['scripts']);
     gulp.watch('app/images/**/*', ['images']);
     gulp.watch('bower.json', ['wiredep']);

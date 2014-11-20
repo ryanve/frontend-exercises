@@ -1,16 +1,7 @@
 /* General */
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
- 
-.clearfix:after {
-  clear: both;
-}
- 
-.clearfix {
-  *zoom: 1;
+
+* {
+  box-sizing: border-box;
 }
 
 html {
@@ -27,12 +18,35 @@ body {
   padding: 0;
 }
 
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+img {
+  max-width: 100%;
+}
+
 p { 
   margin-top: 0; 
   text-align: justify;
 }
 
-h3 { 
+h2 {
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+
+h3 {
   font: italic normal 1.4em georgia, sans-serif;
   letter-spacing: 1px; 
   margin-bottom: 0; 
@@ -71,6 +85,16 @@ abbr {
   width: 100%;
   float: left;
   display: block;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.col:first-child {
+  padding-left: 0;
+}
+
+.col:last-child {
+  padding-right: 0;
 }
 
 .primary {
@@ -90,7 +114,7 @@ abbr {
 }
 
 .nav-area {
-  margin-top: 28px;
+  margin-top: 4.5rem;
 }
 
 .main-nav {
@@ -106,7 +130,7 @@ abbr {
   }
 
 /* Typography */
-.fancy {
+.typo-logo__foodie {
   font-family: 'Abril Fatface', cursive;
   text-transform: lowercase;
   display: block;
@@ -127,4 +151,68 @@ abbr {
 
 .huge {
   font-size: 5rem;
+}
+
+/* Lists */
+.list--clear {
+  list-style: none;
+}
+
+.gallery-list {
+}
+
+.list--flush {
+  padding: 0;
+}
+
+.list--ruled > li {
+  border-bottom: 1px #ccc solid;
+}
+
+/* Pages */
+
+.entry__attribution {
+  color: #7D775C;
+  font: italic normal 1rem georgia, sans-serif;
+}
+
+.entry__attribution > a {
+  color: #7D775C;
+}
+
+.entry__title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.elsewhere {
+  margin-top: 1rem;
+}
+
+.elsewhere__title {
+  margin-top: 0;
+}
+
+.rating-percent {
+  padding: .25rem .5rem;
+  border-radius: .5rem;
+  background: #ddd;
+  margin-left: .25rem;
+}
+
+.price--gray {
+  color: #aaa;
+}
+
+.cuisines {
+  color: #7D775C;
+}
+
+.address {
+  display: block;
+  color: #aaa;
+}
+
+.restaurant {
+  margin-bottom: .75rem;
 }
