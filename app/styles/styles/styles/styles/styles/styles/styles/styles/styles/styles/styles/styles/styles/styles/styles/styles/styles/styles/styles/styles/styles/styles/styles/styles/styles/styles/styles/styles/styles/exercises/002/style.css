@@ -1,0 +1,61 @@
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: green url(../../images/alpine-meadow-tile.jpg) repeat left top;
+  color: #333;
+  font-size: 100%;
+  line-height: 1.9;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #B7A5DF;
+}
+
+a:visited {
+  color: #D4CDDC;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  color: #9685BA;
+  text-decoration: underline;
+}
+
+/* Structure */
+.wrapper {
+  max-width: 750px;
+  background: white;
+  padding: 1.5rem;
+  margin: 40px auto;
+  position: relative;
+}

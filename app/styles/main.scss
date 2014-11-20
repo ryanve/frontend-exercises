@@ -1,35 +1,60 @@
+/* Taste the Rainbow */
+
+// Blues
+$blue: #4a789c;
+$blue-dark: darken($blue, 10%);
+$blue-darkest: darken($blue, 15%);
+
+// Greens
+$green: #7fcb9f;
+$green-dark: darken($green, 10%);
+$green-darkest: darken($green, 15%);
+
+// Oranges
+$orange-light: #e6bc72;
+$orange: #f7ba6f;
+$orange-dark: darken($orange, 10%);
+$orange-darkest: darken($orange, 15%);
+
+// Reds
+$red: #ea6d64;
+$red-dark: darken($red, 10%);
+$red-darkest: darken($red, 15%);
+
+// Light Blues
+$lightblue: #86c1f4;
+$lightblue-dark: darken($lightblue, 10%);
+$lightblue-darkest: darken($lightblue, 15%);
+
+/* Regular */
 body {
-  background: #fafafa;
+  background: $blue;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
 .hero-unit {
-  margin: 50px auto 0 auto;
-  max-width: 650px;
+  background-color: #eee;
+  border-radius: 6px;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
+  margin: 50px auto 0 auto;
+  max-width: 650px;
   padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
 }
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+.logo {
+  margin: 4rem auto;
+  width: 200px;
+  > img {
+    max-width: 100%;
+  }
 }
 
 blockquote {
   border-left: #ccc 2px solid;
+  color: #777;
   margin-left: 0;
   padding-left: 1rem;
-  color: #777;
 }

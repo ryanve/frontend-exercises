@@ -10,10 +10,10 @@ html {
 }
 
 body { 
+  background: #f5f5f5 url(blossoms.jpg) no-repeat bottom right; 
+  color: #753555; 
   font: 100% 'Lato', sans-serif;
   line-height: 1.9;
-  color: #753555; 
-  background: #f5f5f5 url(blossoms.jpg) no-repeat bottom right; 
   margin: 0; 
   padding: 0;
 }
@@ -47,27 +47,26 @@ h2 {
 }
 
 h3 {
-  font: italic normal 1.4em georgia, sans-serif;
+  color: #7D775C;
   letter-spacing: 1px; 
   margin-bottom: 0; 
-  color: #7D775C;
+  text-transform: uppercase;
 }
 
-a:link { 
+a { 
   font-weight: bold; 
   text-decoration: none; 
   color: #B7A5DF;
 }
 
 a:visited { 
-  font-weight: bold; 
-  text-decoration: none; 
   color: #D4CDDC;
+  text-decoration: none; 
 }
 
 a:hover, a:focus, a:active { 
-  text-decoration: underline; 
   color: #9685BA;
+  text-decoration: underline; 
 }
 
 abbr {
@@ -79,14 +78,16 @@ abbr {
   max-width: 900px;
   padding: 0 1.5rem;
   margin: 0 auto;
+  position: relative;
 }
 
 .col {
-  width: 100%;
-  float: left;
   display: block;
+  float: left;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  position: relative;
+  width: 100%;
 }
 
 .col:first-child {
@@ -106,35 +107,48 @@ abbr {
 }
 
 .site-footer {
+  background-color: #753555;
   color: #fff; 
   margin-top: 2rem;
   padding-top: 2rem;
-  padding-bottom: 2rem;
-  background-color: #7D775C;
+  min-height: 4rem;
 }
+
+  .site-footer__inner {
+    padding-bottom: 2rem;
+  }
 
 .nav-area {
   margin-top: 4.5rem;
 }
 
 .main-nav {
-  text-align: right;
   font-size: 1.5rem;
+  text-align: right;
   vertical-align: bottom;
 }
 
   .main-nav__item {
     background: #FFF;
-    padding: .6rem .6rem;
+    border-radius: .25rem;
+    font-weight: normal;
     margin-left: 1rem;
+    padding: .6rem .6rem;
+    transition: all .15s ease-in-out;
+  }
+
+  .main-nav__item:hover {
+    background: #753555; 
+    color: #fff;
+    text-decoration: none;
   }
 
 /* Typography */
 .typo-logo__foodie {
-  font-family: 'Abril Fatface', cursive;
-  text-transform: lowercase;
   display: block;
+  font-family: 'Abril Fatface', cursive;
   letter-spacing: .23rem;
+  text-transform: lowercase;
 }
 
 .half-fade {
@@ -143,10 +157,10 @@ abbr {
 
 .typo-logo{
   font-size: 1.5rem;
-  text-transform: uppercase;
   letter-spacing: .4rem;
   line-height: 3rem;
   margin-top: 0;
+  text-transform: uppercase;
 }
 
 .huge {
@@ -181,8 +195,8 @@ abbr {
 }
 
 .entry__title {
-  margin-top: 0;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .elsewhere {
@@ -194,10 +208,10 @@ abbr {
 }
 
 .rating-percent {
-  padding: .25rem .5rem;
-  border-radius: .5rem;
   background: #ddd;
+  border-radius: .5rem;
   margin-left: .25rem;
+  padding: .25rem .5rem;
 }
 
 .price--gray {
@@ -209,10 +223,37 @@ abbr {
 }
 
 .address {
-  display: block;
   color: #aaa;
+  display: block;
 }
 
 .restaurant {
   margin-bottom: .75rem;
 }
+
+.wine-glass {
+  bottom: 0;
+  height: 180px;
+  width: 120px;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
+
+  .wine-glass:hover .wine-glass__itself {
+    bottom: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  .wine-glass:hover {
+
+  }
+
+.wine-glass__itself {
+  max-width: 100%;
+  transition: all .5s ease-in-out;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+

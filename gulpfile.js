@@ -14,6 +14,7 @@ gulp.task('styles', function () {
         }))
         .pipe($.autoprefixer('last 1 version'))
         .pipe(gulp.dest('.tmp/styles'))
+        .pipe(gulp.dest('app/styles'))
         .pipe($.size());
 });
 
@@ -119,7 +120,8 @@ gulp.task('watch', ['connect', 'serve'], function () {
 
     gulp.watch([
         'app/**/*.html',
-        '.tmp/styles/**/*.css',
+       // '.tmp/styles/**/*.css',
+        'app/exercises/**/*.css',
         'app/scripts/**/*.js',
         'app/images/**/*'
     ]).on('change', function (file) {
