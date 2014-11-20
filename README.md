@@ -1,4 +1,4 @@
-Radius' Marketing Site Frontend Guidelines
+Frontend tasks for interviewee
 ==================================
 
-This describes the general logic and opinions that guide our frontend development. This is a placeholder. An example of an existing frontend guideline document is here: http://tmwagency.github.io/TMW-frontend-guidelines/#section-css-specificity
+Open app/index.html in a browser and go from there.
