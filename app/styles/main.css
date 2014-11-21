@@ -1,9 +1,164 @@
 /* Taste the Rainbow */
+@font-face {
+  font-family: ApexSans-Bold;
+  src: url("fonts/apex-sans/ApexSans-Bold.eot");
+  src: url("fonts/apex-sans/ApexSans-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/apex-sans/ApexSans-Bold.woff") format("woff"), url("fonts/apex-sans/ApexSans-Bold.ttf") format("truetype"), url("fonts/apex-sans/ApexSans-Bold.svg#ApexSans-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ApexSans-BoldItalic;
+  src: url("fonts/apex-sans/ApexSans-BoldItalic.eot");
+  src: url("fonts/apex-sans/ApexSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/apex-sans/ApexSans-BoldItalic.woff") format("woff"), url("fonts/apex-sans/ApexSans-BoldItalic.ttf") format("truetype"), url("fonts/apex-sans/ApexSans-BoldItalic.svg#ApexSans-BoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ApexSans-Book;
+  src: url("fonts/apex-sans/ApexSans-Book.eot");
+  src: url("fonts/apex-sans/ApexSans-Book.eot?#iefix") format("embedded-opentype"), url("fonts/apex-sans/ApexSans-Book.woff") format("woff"), url("fonts/apex-sans/ApexSans-Book.ttf") format("truetype"), url("fonts/apex-sans/ApexSans-Book.svg#ApexSans-Book") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ApexSans-BookItalic;
+  src: url("fonts/apex-sans/ApexSans-BookItalic.eot");
+  src: url("fonts/apex-sans/ApexSans-BookItalic.eot?#iefix") format("embedded-opentype"), url("fonts/apex-sans/ApexSans-BookItalic.woff") format("woff"), url("fonts/apex-sans/ApexSans-BookItalic.ttf") format("truetype"), url("fonts/apex-sans/ApexSans-BookItalic.svg#ApexSans-BookItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ApexSans-ExtraBold;
+  src: url("fonts/apex-sans/ApexSans-ExtraBold.eot");
+  src: url("fonts/apex-sans/ApexSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/apex-sans/ApexSans-ExtraBold.woff") format("woff"), url("fonts/apex-sans/ApexSans-ExtraBold.ttf") format("truetype"), url("fonts/apex-sans/ApexSans-ExtraBold.svg#ApexSans-ExtraBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ApexSans-ExtraBoldItalic;
+  src: url("fonts/apex-sans/ApexSans-ExtraBoldItalic.eot");
+  src: url("fonts/apex-sans/ApexSans-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/apex-sans/ApexSans-ExtraBoldItalic.woff") format("woff"), url("fonts/apex-sans/ApexSans-ExtraBoldItalic.ttf") format("truetype"), url("fonts/apex-sans/ApexSans-ExtraBoldItalic.svg#ApexSans-ExtraBoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ApexSans-ExtraLight;
+  src: url("fonts/apex-sans/ApexSans-ExtraLight.eot");
+  src: url("fonts/apex-sans/ApexSans-ExtraLight.eot?#iefix") format("embedded-opentype"), url("fonts/apex-sans/ApexSans-ExtraLight.woff") format("woff"), url("fonts/apex-sans/ApexSans-ExtraLight.ttf") format("truetype"), url("fonts/apex-sans/ApexSans-ExtraLight.svg#ApexSans-ExtraLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ApexSans-ExtraLightItalic;
+  src: url("fonts/apex-sans/ApexSans-ExtraLightItalic.eot");
+  src: url("fonts/apex-sans/ApexSans-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/apex-sans/ApexSans-ExtraLightItalic.woff") format("woff"), url("fonts/apex-sans/ApexSans-ExtraLightItalic.ttf") format("truetype"), url("fonts/apex-sans/ApexSans-ExtraLightItalic.svg#ApexSans-ExtraLightItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ApexSans-Light;
+  src: url("fonts/apex-sans/ApexSans-Light.eot");
+  src: url("fonts/apex-sans/ApexSans-Light.eot?#iefix") format("embedded-opentype"), url("fonts/apex-sans/ApexSans-Light.woff") format("woff"), url("fonts/apex-sans/ApexSans-Light.ttf") format("truetype"), url("fonts/apex-sans/ApexSans-Light.svg#ApexSans-Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ApexSans-LightItalic;
+  src: url("fonts/apex-sans/ApexSans-LightItalic.eot");
+  src: url("fonts/apex-sans/ApexSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/apex-sans/ApexSans-LightItalic.woff") format("woff"), url("fonts/apex-sans/ApexSans-LightItalic.ttf") format("truetype"), url("fonts/apex-sans/ApexSans-LightItalic.svg#ApexSans-LightItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ApexSans-Medium;
+  src: url("fonts/apex-sans/ApexSans-Medium.eot");
+  src: url("fonts/apex-sans/ApexSans-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/apex-sans/ApexSans-Medium.woff") format("woff"), url("fonts/apex-sans/ApexSans-Medium.ttf") format("truetype"), url("fonts/apex-sans/ApexSans-Medium.svg#ApexSans-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ApexSans-MediumItalic;
+  src: url("fonts/apex-sans/ApexSans-MediumItalic.eot");
+  src: url("fonts/apex-sans/ApexSans-MediumItalic.eot?#iefix") format("embedded-opentype"), url("fonts/apex-sans/ApexSans-MediumItalic.woff") format("woff"), url("fonts/apex-sans/ApexSans-MediumItalic.ttf") format("truetype"), url("fonts/apex-sans/ApexSans-MediumItalic.svg#ApexSans-MediumItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ApexSans-BookSC;
+  src: url("fonts/apex-sans/ApexSanBooC.eot");
+  src: url("AApexSanBooC.eot?#iefix") format("embedded-opentype"), url("fonts/apex-sans/ApexSanBooC.woff") format("woff"), url("fonts/apex-sans/ApexSans-BookSC.ttf") format("truetype"), url("fonts/apex-sans/ApexSanBooC.svg#ApexSans-BookSC") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ApexSans-BookItalicSC;
+  src: url("fonts/apex-sans/ApexSanBooItaC.eot");
+  src: url("fonts/apex-sans/ApexSanBooItaC.eot?#iefix") format("embedded-opentype"), url("fonts/apex-sans/ApexSanBooItaC.woff") format("woff"), url("fonts/apex-sans/ApexSanBooItaC.ttf") format("truetype"), url("fonts/apex-sans/ApexSanBooItaC.svg#ApexSans-BookItalicSC") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ApexSans-MediumSC;
+  src: url("fonts/apex-sans/ApexSanMedC.eot");
+  src: url("fonts/apex-sans/ApexSanMedC.eot?#iefix") format("embedded-opentype"), url("fonts/apex-sans/ApexSanMedC.woff") format("woff"), url("fonts/apex-sans/ApexSanMedC.ttf") format("truetype"), url("fonts/apex-sans/ApexSanMedC.svg#ApexSans-MediumSC") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ApexSans-MediumItalicSC;
+  src: url("fonts/apex-sans/ApexSanMedItaC.eot");
+  src: url("fonts/apex-sans/ApexSanMedItaC.eot?#iefix") format("embedded-opentype"), url("fonts/apex-sans/ApexSanMedItaC.woff") format("woff"), url("fonts/apex-sans/ApexSanMedItaC.ttf") format("truetype"), url("fonts/apex-sans/ApexSanMedItaC.svg#ApexSans-MediumItalicSC") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /* Regular */
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:before, .attachments:before,
+.clearfix:after,
+.attachments:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after, .attachments:after {
+  clear: both;
+}
+
+.clearfix, .attachments {
+  *zoom: 1;
+}
+
+a {
+  color: #4a789c;
+}
+
 body {
   background: #4a789c;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "ApexSans-Medium", sans-serif;
+  font-weight: normal;
+}
+
+h3 {
+  color: #4a789c;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: 'ApexSans-BookSC', sans-serif;
+  letter-spacing: .1rem;
+  text-transform: lowercase;
 }
 
 .hero-unit {
@@ -12,7 +167,7 @@ body {
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
-  margin: 50px auto 0 auto;
+  margin: 50px auto;
   max-width: 650px;
   padding: 60px;
 }
@@ -30,4 +185,47 @@ blockquote {
   color: #777;
   margin-left: 0;
   padding-left: 1rem;
+}
+
+.attachments {
+  list-style: none;
+  padding: 0;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
+}
+
+.attachment {
+  display: block;
+  float: left;
+  max-height: 45px;
+  overflow: hidden;
+  padding: .5rem;
+}
+
+.paperclipped {
+  display: block;
+  position: relative;
+}
+.paperclipped:before {
+  background: rgba(255, 255, 255, 0.8) url("../images/clip.svg") no-repeat center center;
+  background-size: 70%;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 10px;
+  left: -5px;
+  padding: .5rem;
+  pointer-events: none;
+  position: absolute;
+  top: -5px;
+  transition: all .15s ease-in-out;
+  width: 10px;
+}
+.paperclipped:hover:before {
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+
+.attachment--small {
+  width: 16.6666666667%;
 }

@@ -1,0 +1,2 @@
+- a hard style is on footer and shouldn't be
+- the 

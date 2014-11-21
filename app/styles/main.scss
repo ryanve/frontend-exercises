@@ -25,12 +25,58 @@ $red-darkest: darken($red, 15%);
 $lightblue: #86c1f4;
 $lightblue-dark: darken($lightblue, 10%);
 $lightblue-darkest: darken($lightblue, 15%);
+$header-font-family: 'ApexSans-Medium', sans-serif;
+
+@import "fonts/apex-sans/apex-sans";
 
 /* Regular */
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+a {
+  color: $blue;
+}
+
 body {
   background: $blue;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, 
+h2, 
+h3 {
+  font-family: $header-font-family;
+  font-weight: normal;
+}
+
+h3 {
+  color: $blue;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: 'ApexSans-BookSC', sans-serif;
+  letter-spacing: .1rem;
+  text-transform: lowercase;
 }
 
 .hero-unit {
@@ -39,7 +85,7 @@ body {
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
-  margin: 50px auto 0 auto;
+  margin: 50px auto;
   max-width: 650px;
   padding: 60px;
 }
@@ -57,4 +103,50 @@ blockquote {
   color: #777;
   margin-left: 0;
   padding-left: 1rem;
+}
+
+.attachments {
+  @extend .clearfix;
+  list-style: none;
+  padding: 0;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
+}
+
+.attachment {
+  display: block;
+  float: left;
+  max-height: 45px;
+  overflow: hidden;
+  padding: .5rem;
+}
+
+.paperclipped {
+  display: block;
+  position: relative;
+  &:before {
+    background: rgba(255,255,255,.8) url('../images/clip.svg') no-repeat center center;
+    background-size: 70%;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 10px;
+    left: -5px;
+    padding: .5rem;
+    pointer-events: none;
+    position: absolute;
+    top: -5px;
+    transition: all .15s ease-in-out;
+    width: 10px;
+  }
+  &:hover {
+    &:before {
+      transform: rotate(-30deg);
+    }
+  }
+}
+
+.attachment--small{
+  width: 100/6 * 1%; 
+  
 }

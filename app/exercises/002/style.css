@@ -1,4 +1,4 @@
-/* General */
+/* Base */
 
 * {
   box-sizing: border-box;
@@ -25,6 +25,8 @@ body {
   margin-right: 0;
 }
 
+/* Utils */
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -39,26 +41,32 @@ body {
   *zoom: 1;
 }
 
-h1 {
+/* Typography */
+
+article.wrapper .intro h1 {
   font-size: 3rem;
   margin-top: 0;
   text-transform: uppercase;
 }
 
-h2 {
+article.wrapper h2 {
   color: red;
+  font-size: 20px;
 }
 
 h3 {
   color: blue;
+  font-size: 16px;
 }
 
-ul {
+/* Lists */
+
+#ruled {
   list-style: none;
   padding-left: 0;
 }
 
-ul > li {
+#ruled > li {
   padding-top: 0;
   padding-bottom: 0;
   padding-right: 0;
@@ -70,26 +78,42 @@ ul > li {
   border-top: 1px #ccc solid;
 }
 
+/* Else */
+
 img {
-  max-width: 100%;
+  max-width: 100% !important;
+}
+
+footer > nav .h-link {
+  margin-left: 15px;
+}
+
+.where {
+  font-size: 200%;
 }
 
 /* Structure */
-.wrapper {
+
+article.wrapper {
   text-align: center;
   max-width: 750px;
   background: white;
   padding: 1.5rem;
   margin: 80px auto;
   position: relative;
-  border-radius: .25em;
+  border-radius: .25em !important;
 }
 
-.picnic {
-  max-width: 130px;
+/* Illustration */
+
+section img.picnic {
+  max-width: 180px;
+  margin: 25px auto;
 }
 
-.daisy-top-left {
+/* Rotating daisy */
+
+div.daisy-top-left {
   background: transparent url(../../images/white-daisy.png) left top;
   background-size: cover;
   width: 140px;
@@ -97,10 +121,10 @@ img {
   position: absolute;
   left: -60px;
   top: -60px;
-    -webkit-animation: rotating 20.7s linear infinite;
+  -webkit-animation: rotating 20.7s linear infinite;
 }
 
-.daisy-bottom-left {
+div.daisy-bottom-left {
   background: transparent url(../../images/white-daisy.png) left top;
   background-size: cover;
   width: 140px;
@@ -108,10 +132,10 @@ img {
   position: absolute;
   left: -60px;
   bottom: -60px;
-    -webkit-animation: rotating 20.3s linear infinite;
+  -webkit-animation: rotating 20.3s linear infinite;
 }
 
-.daisy-top-right {
+div.daisy-top-right {
   background: transparent url(../../images/white-daisy.png) left top;
   background-size: cover;
   width: 140px;
@@ -119,10 +143,10 @@ img {
   position: absolute;
   right: -60px;
   top: -60px;
-    -webkit-animation: rotating 20.9s linear infinite;
+  -webkit-animation: rotating 20.9s linear infinite;
 }
 
-.daisy-bottom-right {
+div.daisy-bottom-right {
   background: transparent url(../../images/white-daisy.png) left top;
   background-size: cover;
   width: 140px;
@@ -130,7 +154,7 @@ img {
   position: absolute;
   right: -60px;
   bottom: -60px;
-    -webkit-animation: rotating 22.3s linear infinite;
+  -webkit-animation: rotating 22.3s linear infinite;
 }
 
 @-webkit-keyframes rotating {
@@ -141,3 +165,5 @@ img {
         -webkit-transform: rotate(360deg);
     }
 }
+
+/* Gallery */
