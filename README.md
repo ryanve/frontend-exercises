@@ -5,7 +5,9 @@ These are some small, hopefully enjoyable frontend challenges for you to complet
 
 ### Getting started 
 
-First, [fork](https://github.com/RadiusIntelligence/frontend-exercises/fork) this repo. Once forked, clone your fork to your local machine. If you need to know how to fork a repo, see [this](https://guides.github.com/activities/forking/).
+First, [fork](https://github.com/RadiusIntelligence/frontend-exercises/fork) this repo. If you need any help, Github has a nice [guide](https://guides.github.com/activities/forking/).
+
+Once forked, clone your fork to your local machine. 
 
 ### Performing the interview tasks 
 
