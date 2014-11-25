@@ -5,15 +5,15 @@ These are some small, hopefully enjoyable frontend challenges for you to complet
 
 ### Getting started 
 
-First, [fork](https://github.com/RadiusIntelligence/frontend-exercises/fork) this repo. If you need to know how to fork a repo, see [this](https://guides.github.com/activities/forking/).
+First, [fork](https://github.com/RadiusIntelligence/frontend-exercises/fork) this repo. Once forked, clone your fork to your local machine. If you need to know how to fork a repo, see [this](https://guides.github.com/activities/forking/).
 
 ### Performing the interview tasks 
 
-Find and open `app/index.html` in your browser. Follow the directions from there. If you prefer [gulp](http://gulpjs.com), you can run 'gulp watch' from the command line and work that way, too.
+Find and open `app/index.html` in your browser. Follow the directions from there. If you prefer [gulp](http://gulpjs.com), you can run 'gulp watch' from the command line and work that way, too. If you don't have gulp installed, don't worry about it. It's a bit much to explain here and not strictly needed.
 
 ### When you are finished 
 
-When you have the tasks completed to your 
+When you have the tasks completed to your satisfaction, save your work and push to Github. Share the URL of your private fork with your contact at Radius. You'll hear from us soon with the next steps!
 
 ### Tips ###
 
