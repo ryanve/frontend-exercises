@@ -9,7 +9,9 @@ First, [fork](https://github.com/RadiusIntelligence/frontend-exercises/fork) thi
 
 ### Performing the interview tasks 
 
-Find and open `app/index.html` in your browser. Follow the directions from there. If you prefer [gulp](http://gulpjs.com), you can run 'gulp watch' from the command line and work that way, too. If you don't have gulp installed, don't worry about it. It's a bit much to explain here and not strictly needed.
+Find and open `app/index.html` in your browser. Follow the directions from there. 
+
+> If you prefer [gulp](http://gulpjs.com), you can run 'gulp watch' from the command line and work that way, too. If you don't have gulp installed, don't worry about it. It's a bit much to explain here and not strictly needed.
 
 ### When you are finished 
 
