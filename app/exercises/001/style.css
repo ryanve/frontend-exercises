@@ -34,6 +34,12 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
+}
+
+figure {
+  display: table;
+  margin: 1em auto;
 }
 
 p { 
